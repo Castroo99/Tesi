@@ -1,3 +1,0 @@
-# Ignora dataset
-
-code_and_static_analyzer
