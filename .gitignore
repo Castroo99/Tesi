@@ -1,3 +1,5 @@
 # dataset da ignorare	
 
 code_and_static_analyzer
+extracted_func
+extracted_vector
