@@ -1,7 +1,6 @@
 from infercode.client.infercode_client import InferCodeClient
 import os
 import logging
-import tensorflow as tf
 
 # Change from -1 to 0 to enable GPU
 os.environ['CUDA_VISIBLE_DEVICES'] = "0"
@@ -9,9 +8,6 @@ os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 logging.basicConfig(level=logging.INFO)
 rootdir = "extracted_func"
 path = "extracted_func/MDEwOlJlcG9zaXRvcnk0MDc0MzcxNg==-source-Wi-FiTestSuite-Wi-FiTestSuite-Linux-DUT-f7a8d7e-lib-wfa_thr.c-wfa_wmm_thread.txt"
-
-# MDEwOlJlcG9zaXRvcnk0MDc0MzcxNg==-source-Wi-FiTestSuite-Wi-FiTestSuite-Linux-DUT-f7a8d7e-lib-wfa_thr.c-wfa_wmm_thread.txt
-# MDEwOlJlcG9zaXRvcnk0MDc0MzcxNg==-source-Wi-FiTestSuite-Wi-FiTestSuite-Linux-DUT-f7a8d7e-lib-wfa_cmdproc.c-xcCmdProcStaPresetTestParameters.txt
 
 infercode = InferCodeClient(language="c")
 infercode.init_from_config()
